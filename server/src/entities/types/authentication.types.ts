@@ -15,3 +15,8 @@ export type TIntentResetPassword = {
 export type TSubmitResetPassword = TIntentResetPassword & {
   password: string;
 };
+
+export type TPublishPost = {
+  title: string;
+  description: string;
+};
