@@ -4,5 +4,25 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+}
+
+.account-page-inner-container {
+  background-color: whitesmoke;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.account-page-info-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.account-page-info-item-margin-right {
+  margin-right: 10px;
 }

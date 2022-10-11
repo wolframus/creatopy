@@ -1,5 +1,7 @@
 export type TRequestStatus = 'loading' | 'sleep' | 'error' | 'success';
 
+export type TToastTypes = 'error' | 'success';
+
 export type TSignUpRequestPayload = {
   email: string;
   password: string;
@@ -17,6 +19,11 @@ export type TSubmitResetPasswordPayload = {
   password: string;
 };
 
+export type TSubmitFeedPost = {
+  title: string;
+  description: string;
+};
+
 export type AwaitedReturnType<T extends (..._args: any[]) => any> = Awaited<
   ReturnType<T>
 >;
@@ -24,4 +31,13 @@ export type AwaitedReturnType<T extends (..._args: any[]) => any> = Awaited<
 export type TUser = {
   email: string;
   fullName: string;
+};
+
+export type TPost = {
+  id: string;
+  user: TUser;
+  title: string;
+  createdAt: Date;
+  updatedAt: Date;
+  description: string;
 };

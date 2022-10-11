@@ -21,9 +21,22 @@ export default () => {
 
   return (
     <div className='account-page-container'>
-      <p>{userData.email}</p>
-      <p>{userData.fullName}</p>
-      <Button onClick={handleLogOut}>Log Out</Button>
+      <div className='account-page-inner-container'>
+        <p className='account-page-info-item'>
+          <p className='fs-5 text-bold account-page-info-item-margin-right'>
+            Email:
+          </p>
+          <p>{userData.email}</p>
+        </p>
+
+        <p className='account-page-info-item'>
+          <p className='fs-5 text-bold account-page-info-item-margin-right'>
+            Full Name:
+          </p>
+          <p>{userData.fullName}</p>
+        </p>
+        <Button onClick={handleLogOut}>Log Out</Button>
+      </div>
     </div>
   );
 };

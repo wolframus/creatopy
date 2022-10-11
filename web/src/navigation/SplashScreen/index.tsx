@@ -26,6 +26,7 @@ export default () => {
   }, [requestStatus]);
 
   useEffect(() => {
+    console.log('Authenticating');
     dispatch(AuthActions.intentAuthenticate());
   }, []);
 

@@ -1,0 +1,26 @@
+.home-page-container {
+  flex: 1;
+  width: 25vw;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.custom-textarea {
+  max-height: 300px;
+}
+
+.home-page-posts-body {
+  margin-top: 10%;
+}
+
+.home-page-no-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}

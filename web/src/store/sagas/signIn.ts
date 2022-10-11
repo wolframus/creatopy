@@ -3,6 +3,7 @@ import { SagaReturnType } from 'redux-saga/effects';
 
 import API from '../../api';
 import { AuthActions } from '../reducers/auth';
+import { ToastActions } from '../reducers/toast';
 import { SignInActions } from '../reducers/signIn';
 import { AwaitedReturnType } from '../../common.types';
 
@@ -19,6 +20,13 @@ function* intentSubmit({
 
     yield effects.put(AuthActions.setToken(token));
   } catch (err: any) {
+    yield effects.put(
+      ToastActions.showToast({
+        type: 'error',
+        title: 'Sign In',
+        description: 'Error occurred on sign in intent',
+      })
+    );
     yield effects.put(AuthActions.setRequestStatus('error'));
   }
 }

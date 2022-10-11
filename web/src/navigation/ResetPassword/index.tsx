@@ -82,7 +82,11 @@ export default () => {
               name='password'
               control={control}
               render={({ field }) => (
-                <Form.Control {...field} placeholder='New Pasword' />
+                <Form.Control
+                  {...field}
+                  placeholder='New Pasword'
+                  type='password'
+                />
               )}
             />
           </Form.Group>

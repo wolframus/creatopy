@@ -3,6 +3,7 @@ import { SagaReturnType } from 'redux-saga/effects';
 
 import API from '../../api';
 import { AuthActions } from '../reducers/auth';
+import { UserActions } from '../reducers/user';
 
 function* intentAuthenticate(): SagaReturnType<any> {
   try {
@@ -10,6 +11,7 @@ function* intentAuthenticate(): SagaReturnType<any> {
       API.LocalStorage.get,
       'token'
     );
+    yield effects.put(UserActions.intentFetchUserData());
 
     yield effects.put(AuthActions.setToken(token));
   } catch (err: any) {

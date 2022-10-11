@@ -1,0 +1,17 @@
+.create-post-preview-container {
+  border: 1px whitesmoke solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.create-post-preview-left {
+  flex: 8;
+  margin-right: 10px;
+}
+
+.create-post-preview-right {
+  flex: 1;
+}

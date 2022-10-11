@@ -27,8 +27,6 @@ export default () => {
 
   const requestStatus = useSelector(getAuthenticationRequestStatus);
 
-  console.log({ requestStatus });
-
   useEffect(() => {
     if (requestStatus === 'loading') return;
 
