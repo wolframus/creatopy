@@ -1,0 +1,17 @@
+.sign-in-container {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 15%;
+}
+
+.sign-in-bottom-buttons {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
