@@ -7,7 +7,7 @@ const CONFIG = {
   ENCRYPT_TEXT_KEY: 'alskjdalkjdaslkdjasd',
   TOKEN_SECRET_KEY: 'askdubhj9punpnn23qfwefASd',
   MONGO_URL:
-    'mongodb://165.232.113.151:27017/test?readPreference=primary&directConnection=true&ssl=false',
+    'mongodb://localhost:27017/test?readPreference=primary&directConnection=true&ssl=false',
 };
 
 export default CONFIG;
